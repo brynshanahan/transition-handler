@@ -10,7 +10,7 @@ export const NumberHandler = createHandler({
     let tm
     return {
       finished: (next) => {
-        if (time > 0) {
+        if (time >= 0) {
           setTimeout(next, time)
         } else {
           next()
